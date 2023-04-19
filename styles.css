@@ -118,3 +118,40 @@ input:nth-child(3):checked ~ .carousel-images {
   flex-shrink: 0;
   scroll-snap-align: start;
 }
+
+.media-scroller {
+  display: grid;
+  gap:0.6em;
+  grid-auto-flow: column;
+  grid-auto-columns: 30%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+
+
+
+.media-element img {
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+
+::-webkit-scrollbar{
+  width:0.5em;
+}
+
+
+::-webkit-scrollbar-track{
+  background:grey;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background:var(--pri-clr);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:var(--pri-clr);
+}
